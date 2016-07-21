@@ -55,6 +55,7 @@ p {
 }
 
 canvas {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -62,6 +63,7 @@ canvas {
   transition-property: opacity;
   transition-duration: 0.5s;
   cursor: none;
+  background-color: transparent;
 }
 
 button {
