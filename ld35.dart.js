@@ -5177,6 +5177,8 @@ $1:function(a){var z
 J.fw(a)
 a.scH(H.iv(H.a_(document.querySelector("input[type=radio][name=speed]:checked"),"$isiy").value,null))
 z=document.querySelector("#storyContainer").style;(z&&C.f).saB(z,"0.0")
+z=document.querySelector("body").style
+z.cursor="none"
 z=document.querySelector("#game").style;(z&&C.f).saB(z,"1.0")
 z=document.querySelector("#hud").style;(z&&C.f).saB(z,"1.0")
 P.cF(P.dt(0,0,0,0,0,1),new A.lq(a))}},
@@ -5194,9 +5196,10 @@ document.querySelector("#lastscore").textContent=H.e(a)
 if(J.by(H.iw(document.querySelector("#highscore").textContent,null,null),a))document.querySelector("#highscore").textContent=H.e(a)
 z=document.querySelector("#storyContainer").style;(z&&C.f).saB(z,"1.0")
 z.display="flex"
+z.cursor="inherit"
 z=document.querySelector("#game").style;(z&&C.f).saB(z,"0.1")
 z=document.querySelector("#hud").style;(z&&C.f).saB(z,"0.1")
-z=document.querySelector("#hud").style
+z=document.querySelector("body").style
 z.cursor="inherit"
 J.fo(document.querySelector("#startGame"))}}},1],["","",,F,{"^":"",
 hE:[function(){var z,y,x,w,v,u,t,s,r
