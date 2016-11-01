@@ -1,0 +1,36 @@
+material-tab-panel {
+  background-color: white;
+  transition-property: opacity;
+  transition-duration: 0.25s;
+}
+
+#story {
+  width: 100%;
+}
+
+#startGame {
+  margin: 0 auto;
+  width: 100%;
+}
+
+acx-scorecard {
+  float: right;
+}
+
+#loading {
+  text-align: center;
+}
+
+.warning {
+  color: darkred;
+}
+
+h3 {
+  text-decoration: underline black;
+  margin-top: 10px;
+}
+
+#music {
+  display: flex;
+  justify-content: flex-end;
+}

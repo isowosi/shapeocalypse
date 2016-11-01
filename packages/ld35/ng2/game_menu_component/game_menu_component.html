@@ -1,0 +1,64 @@
+<material-tab-panel [style.opacity]='gameStarting ? 0.0 : 0.99'>
+  <material-tab label='Game' id='storyContainer'>
+    <div id='story'>
+      <div id='music'>
+        <material-fab aria-label='{{musicEnabled ? "Music enabled" : "Music disabled"' (trigger)='musicEnabled = !musicEnabled'>
+          <glyph icon='{{musicEnabled ? "volume_up" : "volume_off"}}'></glyph>
+        </material-fab>
+      </div>
+      <h3 class='warning'>WARNING</h3>
+      DO <strong><em>NOT</em></strong> PLAY THIS GAME WITH EPILEPSY! <br/>
+      DO <strong>NOT</strong> PLAY THIS GAME ON A FULL STOMACH. <br/>
+      DO <strong>NOT</strong> PLAY THIS GAME FOR A PROLONGED TIME.
+      <h3>Select your starting speed</h3>
+      <material-radio-group class='speedSelection'>
+        <material-radio *ngFor='let speedOption of speedOptions'
+                        [checked]='speedOption == speed'
+                        (checkedChange)='speed = $event ? speedOption : speed'>
+          {{ speedOption.label }}
+        </material-radio>
+      </material-radio-group>
+      <div *ngIf='loading'>
+        <div class='text'>Fetching remaining resources, please wait...</div>
+        <material-spinner></material-spinner>
+      </div>
+      <material-button raised id='startGame' title='Start Game' *ngIf='!loading'
+                       (trigger)='startGame()'
+                       [disabled]='gameStarting'>Start Game
+      </material-button>
+
+      <acx-scorecard label='Last Game' value='{{lastScore ?? "--"}}'></acx-scorecard>
+      <acx-scorecard label='Session Highscore' value='{{sessionHighScore ?? "--"}}'></acx-scorecard>
+      <acx-scorecard label='Local Highscore' value='{{localHighScore ?? "--"}}'></acx-scorecard>
+
+    </div>
+  </material-tab>
+  <material-tab label='Controls'>
+    <div id='controls'>
+      <table>
+        <thead>
+        <tr>
+          <th>Action</th>
+          <th>Keyboard</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>shapeshift</td>
+          <td>1 - circle, 2 - square, 3 - triangle</td>
+        </tr>
+        <tr>
+          <td>movement</td>
+          <td>Press and hold WASD or cursors</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </material-tab>
+  <material-tab label='Credits'>
+    <div>
+      Music by Eric Matyas<br/>
+      <a href='http://www.soundimage.org' target='_blank'>www.soundimage.org</a>
+    </div>
+  </material-tab>
+</material-tab-panel>

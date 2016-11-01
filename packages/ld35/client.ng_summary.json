@@ -1,0 +1,99 @@
+{
+  "ngDeps": {
+    "1": "client",
+    "3": [
+      {
+        "1": "dart:html",
+        "5": false
+      },
+      {
+        "1": "dart:web_audio",
+        "5": false
+      },
+      {
+        "1": "package:ld35/shared.dart",
+        "5": false
+      },
+      {
+        "1": "package:gamedev_helpers/gamedev_helpers.dart",
+        "5": false
+      },
+      {
+        "1": "dart:web_gl",
+        "5": false
+      },
+      {
+        "1": "dart:typed_data",
+        "5": false
+      }
+    ],
+    "4": [
+      {
+        "1": "dart:html"
+      },
+      {
+        "1": "package:gamedev_helpers/gamedev_helpers.dart"
+      }
+    ],
+    "6": "client.dart"
+  },
+  "type": {
+    "GetGamePadIndex": {
+      "class": "Identifier",
+      "name": "GetGamePadIndex",
+      "moduleUrl": "asset:ld35/lib/client.dart",
+      "prefix": null,
+      "value": null
+    },
+    "InputHandlingSystem": {
+      "class": "Identifier",
+      "name": "InputHandlingSystem",
+      "moduleUrl": "asset:ld35/lib/client.dart",
+      "prefix": null,
+      "value": null
+    },
+    "PlayerRenderingSystem": {
+      "class": "Identifier",
+      "name": "PlayerRenderingSystem",
+      "moduleUrl": "asset:ld35/lib/client.dart",
+      "prefix": null,
+      "value": null
+    },
+    "TunnelSegmentRenderingSystem": {
+      "class": "Identifier",
+      "name": "TunnelSegmentRenderingSystem",
+      "moduleUrl": "asset:ld35/lib/client.dart",
+      "prefix": null,
+      "value": null
+    },
+    "ObstacleRenderingSystem": {
+      "class": "Identifier",
+      "name": "ObstacleRenderingSystem",
+      "moduleUrl": "asset:ld35/lib/client.dart",
+      "prefix": null,
+      "value": null
+    },
+    "DistanceTraveledRenderingSystem": {
+      "class": "Identifier",
+      "name": "DistanceTraveledRenderingSystem",
+      "moduleUrl": "asset:ld35/lib/client.dart",
+      "prefix": null,
+      "value": null
+    },
+    "MusicPlayerSystem": {
+      "class": "Identifier",
+      "name": "MusicPlayerSystem",
+      "moduleUrl": "asset:ld35/lib/client.dart",
+      "prefix": null,
+      "value": null
+    },
+    "Game": {
+      "class": "Identifier",
+      "name": "Game",
+      "moduleUrl": "asset:ld35/lib/client.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}
