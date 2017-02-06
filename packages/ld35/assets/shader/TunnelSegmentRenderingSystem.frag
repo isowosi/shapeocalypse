@@ -1,5 +1,6 @@
 precision mediump float;
 
+uniform vec3 uLightColor;
 uniform float uTime;
 uniform float uBeatMod;
 varying vec3 vPos;
@@ -89,7 +90,7 @@ void main() {
     vec3 normal = normalize(vNormal);
     vec3 lightDirection = normalize(vLightDirection);
     float vNormalDotLight = max(dot(lightDirection, normal), 0.0);
-    vec3 diffuse = vec3(1.0, 1.0, 1.0) * vec3(r, g, b) * 0.7 * vNormalDotLight;
+    vec3 diffuse = uLightColor * vec3(r, g, b) * 0.7 * vNormalDotLight * 1.5;
 
     gl_FragColor = vec4(diffuse, 1.0);
 }
