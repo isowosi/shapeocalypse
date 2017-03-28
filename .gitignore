@@ -3,3 +3,5 @@
 build/
 pubspec.lock
 .packages
+*.ng_meta.json
+*.ng_summary.json

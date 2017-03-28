@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 html, body {
   width: 100%;
   height: 100%;
@@ -11,11 +6,14 @@ html, body {
   justify-content: center;
   align-items: center;
   background-color: black;
+  font-family: Roboto,"Helvetica Neue",Arial,Helvetica,sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 #gamecontainer {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   display: flex;
   align-items: center;
   align-content: center;
@@ -23,9 +21,8 @@ html, body {
 
 game-container {
   margin: 0 auto;
+  max-height: 600px;
   width: 800px;
-  height: 600px;
-  max-width: 800px;
 }
 
 #loading > .text {
