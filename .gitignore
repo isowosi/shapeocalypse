@@ -5,3 +5,6 @@ pubspec.lock
 .packages
 *.ng_meta.json
 *.ng_summary.json
+packages/ld35/ng2/
+packages/intl/
+packages/angular2_components/
