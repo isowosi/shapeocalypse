@@ -30665,14 +30665,15 @@ n:{
 P3:function(a,b,c,d){var z=new Q.hk(a,b,c,d,P.v(),P.v(),P.v(),P.v(),null,null)
 z.Bm(a,b,c,d)
 return z}}},P6:{"^":"a:0;a",
-$1:function(a){var z,y,x,w,v
+$1:function(a){var z,y,x,w,v,u
 z=C.da.vr(J.pE(a))
 y=J.a3(z)
 x=[P.n,[P.S,P.n,P.t]]
 w=H.dO(y.h(z,"global"),"$isS",x,"$asS")
 if(w!=null){v=this.a
 J.cD(w,new Q.P4(v))
-J.cD(H.dO(y.h(z,v.c),"$isS",x,"$asS"),new Q.P5(v))}}},P4:{"^":"a:4;a",
+u=H.dO(y.h(z,v.c),"$isS",x,"$asS")
+if(u!=null)J.cD(u,new Q.P5(v))}}},P4:{"^":"a:4;a",
 $2:function(a,b){this.a.x.i(0,H.eJ(a,null,null),J.E(b,"score"))}},P5:{"^":"a:4;a",
 $2:function(a,b){this.a.r.i(0,H.eJ(a,null,null),J.E(b,"score"))}}}],["","",,V,{"^":"",
 p8:function(){if($.z2)return
