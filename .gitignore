@@ -8,3 +8,7 @@ pubspec.lock
 packages/ld35/ng2/
 packages/intl/
 packages/angular2_components/
+packages/isowosi_angular2_components/
+packages/browser/
+packages/analyzer/
+packages/angular2/
