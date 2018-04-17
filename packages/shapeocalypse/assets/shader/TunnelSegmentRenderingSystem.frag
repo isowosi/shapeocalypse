@@ -1,11 +1,14 @@
+#version 300 es
+
 precision mediump float;
 
 uniform vec3 uLightColor;
 uniform float uTime;
 uniform float uBeatMod;
-varying vec3 vPos;
-varying vec3 vNormal;
-varying vec3 vLightDirection;
+in vec3 vPos;
+in vec3 vNormal;
+in vec3 vLightDirection;
+out vec4 fragColor;
 const float PI = 3.14159;
 
 float r = 0.0;
@@ -92,5 +95,5 @@ void main() {
     float vNormalDotLight = max(dot(lightDirection, normal), 0.0);
     vec3 diffuse = uLightColor * vec3(r, g, b) * 0.7 * vNormalDotLight * 1.5;
 
-    gl_FragColor = vec4(diffuse, 1.0);
+    fragColor = vec4(diffuse, 1.0);
 }

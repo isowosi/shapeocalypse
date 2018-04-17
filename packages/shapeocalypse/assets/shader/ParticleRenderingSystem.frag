@@ -1,5 +1,8 @@
+#version 300 es
+
 precision mediump float;
-varying vec3 vColor;
+in vec3 vColor;
+out vec4 fragColor;
 const vec2 center = vec2(0.5, 0.5);
 
 void main() {
@@ -7,5 +10,5 @@ void main() {
   if (dist > 0.35) {
     discard;
   }
-  gl_FragColor = vec4(vColor * 3.0 * (0.5 - dist), 2.0 * (0.5 - dist));
+  fragColor = vec4(vColor * 3.0 * (0.5 - dist), 2.0 * (0.5 - dist));
 }
